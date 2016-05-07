@@ -1,0 +1,70 @@
+body {
+    background-image:url("img/brick_background_dark.png");
+    color:lightblue;
+}
+h1, h2, h3 {
+    font-size: 2.5em;
+}
+a {
+    font-size: 1em;
+    color:lightblue;
+}
+
+ul {
+    list-style-type: none;
+}
+.hovered {
+    opacity: .7;
+}
+a {
+    text-decoration: none;
+    color: #23A;
+}
+
+.box h3{
+    text-align:center;
+    color:brown;
+    position:relative; 
+}
+.box {
+    text-align:center;
+    color:brown;
+    width:740px;
+    height:100px;
+    padding:20;
+    background-image:url("img/parchment_banner.png");
+    background-repeat:no-repeat;
+    margin:40px auto;
+}
+
+/*===========================================
+ * Effect 1 -- normal shadowed box
+ * =========================================*/
+.effect1{
+    box-shadow: 0 10px 6px -6px #776;
+}
+
+/*==================================================
+ * Effect 2 -- curved edges, shadowed box
+  * ===============================================*/
+.effect2{
+    position: relative;
+}
+.effect2:before, .effect2:after{
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width:500px;
+    background: #777;
+    box-shadow: 0 15px 10px #777;
+    transform: rotate(-3deg);
+}
+.effect2:after{
+    transform: rotate(3deg);
+    right: 10px;
+    left: auto;
+}

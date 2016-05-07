@@ -1,0 +1,12 @@
+# Various project dependencies, including :
+#   Python libraries/Modules
+#   Javascript includes
+
+#********* Python ***************
+ajaxterm :
+    $ wget http://antony.lesuisse.org/ajaxterm/files/Ajaxterm-0.10.tar.gz
+    $ tar zxvf Ajaxterm-0.10.tar.gz
+    $ cd Ajaxterm-0.10
+    $ ./ajaxterm.py
+
+

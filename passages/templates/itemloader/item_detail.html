@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="box effect1">
+    <p><b>{{ item.title|capfirst }}</b></p>
+</div>
+
+<p>Description:
+{{ item.description }}</p>
+
+<ul>
+    <li>
+        <a href="{% url 'index' %}">Back to item list</a>
+    </li>
+</ul>
+{% endblock content %}
